@@ -453,7 +453,7 @@ public class Index extends javax.swing.JFrame {
         this.MC.Adicionar(new Moneda(100),2);
         this.MC.Adicionar(new Moneda(200),3);
         this.MC.Adicionar(new Moneda(500),4);
-        //this.MC.Adicionar(new Moneda(1000),5);
+        this.MC.Adicionar(new Moneda(1000),5);
     }
     
     private void setIcons(){
