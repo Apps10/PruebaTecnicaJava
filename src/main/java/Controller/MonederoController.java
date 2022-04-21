@@ -30,7 +30,8 @@ public class MonederoController {
     public void Adicionar(ArrayList<Moneda> m){
         for(int i=0;i<m.size();i++){
             int id = this.IndexDeAlcancia(m.get(i).getPrecio());
-            Adicionar(m.get(i),1);
+            this.Alcancia.get(id).setnMonedas(this.Alcancia.get(id).getnMonedas()+1);
+            //Adicionar(m.get(i),1);
         }
     }
   
@@ -252,8 +253,8 @@ public class MonederoController {
         int nm =0;
         for(int i=0;i<Alcancia.size();i++){
             if(Alcancia.get(i).getM().getPrecio()==m.getPrecio()){
-               nm = Alcancia.get(i).getnMonedas();
-               break;
+                nm = Alcancia.get(i).getnMonedas();
+                break;
             }
         }
         return nm;
